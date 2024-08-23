@@ -10,17 +10,17 @@ body {
 }
 
 .container {
-    background: #fff; /* White background */
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    max-width: 500px;
+    background: #2b2e4a; /* Slightly lighter purple */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    max-width: 400px;
     width: 100%;
     text-align: center;
 }
 
 h1 {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     font-size: 24px;
     color: #a29bfe; /* Soft light purple */
 }
@@ -58,22 +58,15 @@ h1 {
 }
 
 .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     text-align: left;
 }
 
 label {
     display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #333;
-}
-
-select {
-    width: 100%;
-    padding: 10px;
-    font-size: 14px;
-    margin-bottom: 15px;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #dfe6e9;
 }
 
 .key-slider {
@@ -114,11 +107,11 @@ select {
 }
 
 button {
-    background-color: #007bff; /* Blue */
+    background-color: #6c5ce7;
     color: white;
     border: none;
     padding: 12px 20px;
-    font-size: 14px;
+    font-size: 16px;
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -126,7 +119,7 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3; /* Darker Blue */
+    background-color: #81ecec; /* Cyan */
 }
 
 .hidden {
@@ -134,136 +127,64 @@ button:hover {
 }
 
 .progress-bar {
-    background-color: #f0f0f0; /* Light gray */
-    border-radius: 5px;
+    background-color: #2b2e4a; /* Slightly lighter purple */
+    border-radius: 8px;
     overflow: hidden;
-    margin-top: 20px;
-    height: 30px;
+    margin-top: 25px;
+    height: 35px;
     position: relative;
 }
 
 .progress-bar div {
     height: 100%;
-    background-color: #007bff; /* Blue */
+    background-color: #81ecec; /* Cyan */
     width: 0;
     transition: width 0.5s;
 }
 
 #progressText {
-    margin-top: 10px;
-    font-weight: bold;
-    color: #333;
+    margin-top: 15px;
+    font-weight: 600;
+    color: #dfe6e9; /* Light gray */
 }
 
 .key-item {
     display: flex;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .key-item input {
     flex: 1;
-    padding: 10px;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-right: 10px;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #81ecec; /* Cyan */
+    border-radius: 8px;
+    margin-right: 12px;
 }
 
 .copyKeyBtn {
-    background-color: #28a745; /* Green */
+    background-color: #6c5ce7;
     border: none;
-    padding: 10px 20px;
+    padding: 12px 20px;
     color: white;
-    font-size: 14px;
-    border-radius: 5px;
+    font-size: 16px;
+    border-radius: 8px;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-.copyKeyBtn:hover {
-    background-color: #218838; /* Darker Green */
+copyKeyBtn:hover {
+    background-color: #81ecec; /* Cyan */
 }
 
 .footer {
-    margin-top: 20px;
+    margin-top: 25px;
     font-size: 14px;
     color: #777;
 }
 
 #copyStatus {
-    margin-top: 10px;
-    color: green;
-}
-
-#telegramChannelBtn {
-    background-color: green;
-}
-.container {
-    background-color: #2b2e4a; /* Slightly lighter purple */
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    padding: 30px;
-    max-width: 500px;
-    width: 100%;
-    text-align: center;
-    margin: 0 auto; /* Để căn giữa khung */
-    border: 2px solid #6c5ce7; /* Bright purple border */
-}
-
-/* Để căn chỉnh tiêu đề trong khung */
-.container h1 {
-    margin-bottom: 25px;
-    font-size: 24px;
-    color: #a29bfe; /* Soft light purple */
-}
-
-/* Select Game (Danh sách chọn game) */
-.container select {
-    background-color: #1e1b2e; /* Dark Purple */
-    color: #e0e0e0;
-    border: 1px solid #6c5ce7; /* Bright purple */
-    border-radius: 8px;
-    padding: 10px;
-    font-size: 16px;
-    margin-bottom: 15px;
-    width: 100%;
-    cursor: pointer;
-    transition: border-color 0.3s;
-}
-
-.container select:hover {
-    border-color: #a29bfe; /* Soft light purple */
-}
-
-/* Number of keys (Số lượng key) */
-.container input[type="number"] {
-    background-color: #1e1b2e; /* Dark Purple */
-    color: #e0e0e0;
-    border: 1px solid #6c5ce7; /* Bright purple */
-    border-radius: 8px;
-    padding: 10px;
-    font-size: 16px;
-    margin-bottom: 15px;
-    width: 100%;
-}
-
-.container input[type="number"]::placeholder {
-    color: #dfe6e9; /* Light gray */
-}
-
-/* Nút "Generate Keys" */
-.container button {
-    background-color: #6c5ce7; /* Bright purple */
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    font-size: 16px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    margin-top: 20px;
-}
-
-.container button:hover {
-    background-color: #81ecec; /* Cyan */
+    margin-top: 15px;
+    color: #81ecec; /* Cyan */
 }
